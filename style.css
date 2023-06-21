@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./imagens/background2.jpg) no-repeat top center/cover;
+ 
+ height: 100vh;
+}
+
+.conteiner {
+  border: 3px solid cyan;
+  border-radius: 15px;
+  width: 500px;
+  height: 500px;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.415);
+  opacity: 0.9;  
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.box img {
+  filter: hue-rotate(185deg) brightness(200%);
+}
+
+.input {
+
+}
+
+.input input {
+  display: block;
+  height: 48px;
+  width: 80%;
+  margin: 60px auto;
+  padding: 0 8px;
+  border: 1px solid aqua;
+  border-radius: 12px;
+  background: transparent;
+  color: white;
+  font: medium sans-serif;
+  font-weight: bold;
+  outline: none;
+}
+
+.input input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.input div {
+  position: relative;
+}
+
+.material-symbols-outlined {
+  position: absolute;
+  color: wheat;
+  top: 25%;
+  left: 80%;
+  cursor: pointer; 
+} 
+
+.button img {
+  position: absolute;
+  filter: brightness(150%) opacity(80%);
+}
+
+.button span {
+  position: relative;
+  color: rgb(57, 57, 211);
+  font-size: medium;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.button a :hover {
+  filter: brightness(100%);
+}
