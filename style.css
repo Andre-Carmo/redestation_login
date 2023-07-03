@@ -34,10 +34,6 @@ body {
   filter: hue-rotate(185deg) brightness(200%);
 }
 
-.input {
-
-}
-
 .input input {
   display: block;
   height: 48px;
@@ -82,11 +78,11 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.button a {
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .button a :hover {

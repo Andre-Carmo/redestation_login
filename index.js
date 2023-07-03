@@ -1,15 +1,20 @@
-let n = 0
-function troca() {
-  const yey = document.querySelector('.senha')
-  if (n == 0) {
-    yey.setAttribute ("type","text")
-    document.querySelector(".material-symbols-outlined").innerHTML="visibility_off";
-    n = 1
+let text = 'visibility', type = 'password';
+const buttomYey = document.querySelector('.material-symbols-outlined')
+
+buttomYey.addEventListener("click", () => {
+  text === 'visibility' ? text = 'visibility_off': text = 'visibility' ;
+  document.querySelector(".material-symbols-outlined").innerHTML= text;
+  type === 'password' ? type = 'text' : type = 'password';
+  document.querySelector('.pass').setAttribute ("type",type)});
+
+const buttom = document.querySelector('.button');
+
+buttom.addEventListener('click', () => {
+  let  inputs = document.querySelectorAll('div input');
+  if (inputs[0].value && inputs[1].value) {
+    alert(0)
+  }else {
+    alert(1)
   }
-  else {
-    yey.setAttribute ("type","password")
-    document.querySelector(".material-symbols-outlined").innerHTML="visibility"
-    n = 0
-  }
-    
-}
+
+})
